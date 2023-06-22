@@ -23,6 +23,18 @@
     "precio": {
       "type": "decimal",
       "required": true
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "nombre"
     }
   }
 }
